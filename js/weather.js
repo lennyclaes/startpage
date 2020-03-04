@@ -9,7 +9,7 @@ async function getData() {
 
 async function renderData(data) {
     const html = `
-        <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
+        <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
         <div class="weather-data">
             <h3>${Math.floor(data.main.temp)}°C</h3>
             <p>${data.weather[0].description}</p>
