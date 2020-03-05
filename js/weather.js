@@ -9,10 +9,10 @@ async function getData() {
 
 async function renderData(data) {
     const html = `
-        <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
+        <img class="weather-icon" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
         <div class="weather-data">
-            <h3>${Math.floor(data.main.temp)}°C</h3>
-            <p>${data.weather[0].description}</p>
+            <h3 class="weather-temp">${Math.floor(data.main.temp)}°C</h3>
+            <p class="weather-desc">${data.weather[0].description}</p>
         </div>
     `;
     weatherElement.innerHTML = html;

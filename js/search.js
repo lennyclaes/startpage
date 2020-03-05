@@ -39,5 +39,5 @@ function fillInput(e) {
 async function search() {
     const searchUrl = `https://www.google.com/search?q=${searchValue.value}`;
 
-    window.location.href = searchUrl;
+    const win = window.open(searchUrl, '_blank');
 }

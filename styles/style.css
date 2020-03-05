@@ -47,3 +47,12 @@ body {
     align-items: center;
     color: #ffffff;
 }
+
+.weather-icon {
+    border-radius: 90px;
+    background: rgba(220, 220, 220, 0.5);
+}
+
+.weather-data {
+    padding-left: 15px;
+}
